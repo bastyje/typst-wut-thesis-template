@@ -29,7 +29,7 @@
   degree: none,
   city: none,
   date: none,
-  bib_path: none,
+  bibliography: none,
   doc,
 ) = {
   set page(
@@ -69,6 +69,7 @@
   set align(left)
   set text(size: 12pt)
   set par(justify: true, spacing: 20pt)
+  set std.bibliography(title: "Bibliografia")
 
   pagebreak()
 
@@ -102,7 +103,7 @@
   pagebreak()
   doc
   pagebreak()
-  bibliography(bib_path, title: "Bibliografia")
+  bibliography
   context {
     let acronym_dict = acronyms.get()
     if acronym_dict.len() > 0 [

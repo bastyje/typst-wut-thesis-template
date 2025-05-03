@@ -1,6 +1,4 @@
-// this file should be in template directory, but for the sake of development it is temporarily here, because one cannot import packages from outside project root
-
-#import "template.typ": masters
+#import "@local/wut-thesis:0.0.1": masters
 
 #show: masters.with(
     faculty: "Wydział Elektryczny",
@@ -14,7 +12,7 @@
     city: "Warszawa",
     date: "2025",
     abstract: (pl: [#lorem(300)], en: [#lorem(300)]),
-    bib_path: "template/sources.bib",
+    bibliography: bibliography("sources.bib"),
 )
 
 = Angular vs React
